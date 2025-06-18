@@ -4,8 +4,9 @@ import { removeItem, updateQuantity } from './CartSlice';
 import './CartItem.css';
 
 const CartItem = ({ onContinueShopping }) => {
-  const cart = useSelector(state => state.cart.cartItems); // make sure you're accessing cart.cartItems
-  const dispatch = useDispatch();
+
+    const cart = useSelector(state => state.cart.cartItems); // make sure you're accessing cart.cartItems
+    const dispatch = useDispatch();
 
   // ✅ Calculate total cost for a single item
   const calculateTotalCost = (item) => {
